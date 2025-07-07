@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body class="weather-theme" data-condition="clear-day">
+  <div class="app-container">
+    <div class="background-overlay"></div>
+
+    <!-- WEATHER HEADER -->
+    <header class="weather-header">
+      <div class="header-content">
+        <h1 class="location-title">My Location</h1>
+        <p class="sub-location">Bratislava II</p>
+        <div class="main-temp">
+          <span class="temp-value">18°</span>
+          <span class="temp-condition">Cloudy</span>
+        </div>
+        <div class="temp-range">
+          H: <span class="high-temp">25°</span> &nbsp; L: <span class="low-temp">12°</span>
+        </div>
+        <p class="conditions-forecast">Partly cloudy conditions expected around 07:00.</p>
+      </div>
+    </header>
+
+    <!-- HOURLY FORECAST -->
+    <section class="hourly-forecast">
+      <h2>Hourly Forecast</h2>
+      <div class="scroll-container">
+        <div class="hour-card">
+          <div class="hour-time">Now</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/partly_cloudy.png">
+          </div>
+          <div class="hour-temp">18°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">23</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear.png">
+          </div>
+          <div class="hour-temp">17°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">00</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/cloudy.png">
+          </div>
+          <div class="hour-temp">17°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">01</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">16°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">02</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">16°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">03</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">15°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">04</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">15°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">05</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">15°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">06</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">15°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">07</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">15°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">08</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">15°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">09</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">15°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">10</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">15°</div>
+        </div>
+        <div class="hour-card">
+          <div class="hour-time">11</div>
+          <div class="hour-icon">
+            <img class="hour-icon-img" src="../ios_icons/clearORmostly_clear(night).png">
+          </div>
+          <div class="hour-temp">15°</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10-DAY FORECAST -->
+    <section class="daily-forecast">
+      <h2>10-Day Forecast</h2>
+      <ul class="day-list">
+        <li class="day-item">
+          <span class="day-name">Today</span>
+          <span class="chance">70% ⛅</span>
+          <span class="day-range">12° / 25°</span>
+        </li>
+        <li class="day-item">
+          <span class="day-name">Thu</span>
+          <span class="chance">70% ⛅</span>
+          <span class="day-range">14° / 26°</span>
+        </li>
+        <li class="day-item">
+          <span class="day-name">Fri</span>
+          <span class="chance">70% ⛅</span>
+          <span class="day-range">15° / 19°</span>
+        </li>
+        <li class="day-item">
+          <span class="day-name">Sat</span>
+          <span class="chance">70% ⛅</span>
+          <span class="day-range">11° / 20°</span>
+        </li>
+        <li class="day-item">
+          <span class="day-name">Sun</span>
+          <span class="chance">70% ⛅</span>
+          <span class="day-range">9° / 22°</span>
+        </li>
+        <li class="day-item">
+          <span class="day-name">Mon</span>
+          <span class="chance">70% ⛅</span>
+          <span class="day-range">9° / 22°</span>
+        </li>
+        <li class="day-item">
+          <span class="day-name">Tue</span>
+          <span class="chance">70% ⛅</span>
+          <span class="day-range">10° / 23°</span>
+        </li>
+        <li class="day-item">
+          <span class="day-name">Wed</span>
+          <span class="chance">70% ⛅</span>
+          <span class="day-range">12° / 22°</span>
+        </li>
+        <li class="day-item">
+          <span class="day-name">Thu</span>
+          <span class="chance">70% ⛅</span>
+          <span class="day-range">10° / 19°</span>
+        </li>
+        <li class="day-item">
+          <span class="day-name">Fri</span>
+          <span class="chance">45% 🌧</span>
+          <span class="day-range">10° / 18°</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
